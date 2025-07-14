@@ -1,0 +1,18 @@
+name: NeVI
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=1.24.3
+  - pandas=2.2.2
+  - scipy=1.14.1
+  - pyreadr=0.5.2
+  - matplotlib
+  - nb_conda
+  - jupyter
+  - pip
+  - pip:
+      - torch==2.0.1
+      - nflows==0.14
+      - notebook==6.5.6
