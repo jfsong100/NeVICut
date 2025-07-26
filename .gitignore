@@ -1,4 +1,7 @@
 experiments/real_data/COMSA/results
 experiments/real_data/COMSA/subscripts
+experiments/real_data/COMSA/real_data
+experiments/real_data/COMSA/stage1
+experiments/real_data/COMSA/stage2
 master_experiments.ipynb
 .DS_Store
