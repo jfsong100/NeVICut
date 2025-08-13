@@ -11,9 +11,13 @@ def get_marginal_samples(model, eta, n_iterations=1000):
         Tensor of shape [n_iterations, N_MC, p_theta]
     """
     theta_samples_list = []
+    model.eval()
+
     with torch.no_grad():
-        for _ in range(n_iterations):
+        for i in range(n_iterations):
             theta = model.sample_q_theta_given_eta(eta)
             theta_samples_list.append(theta)
-    
+            if (i + 1) % 100 == 0:
+                print(f"Generated {i + 1}/{n_iterations} samples")
+
     return torch.stack(theta_samples_list, dim=0)  # [n_iterations, N_MC, p_theta]
