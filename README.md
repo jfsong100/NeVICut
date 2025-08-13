@@ -1,7 +1,13 @@
-# NEVI: Cut Bayes Experiments
+# NeVI-Cut: Neural Network Variational Inference Cut Bayes model
 
 This repository contains:
-- `cutBayesFlow/`: Reusable package for Cut Bayes VI
-- `experiments/`: Scripts for simulations and real data
+- `cutBayesFlow/`: core model and training functions
+- `experiments/`: reproducible scripts for simulations and real-data analyses from the paper
 
 ## Setup
+- To install the required environment (recommended):
+conda env create -f environment.yml
+conda activate nevi-cut
+
+- Alternatively, you can install via setup.py:
+pip install .
