@@ -33,7 +33,7 @@ class CutBayesFlow(nn.Module):
         num_blocks=2,
         tails="linear",
         map_to_simplex=False,
-        flow_type="MAF",
+        flow_type="NSF-AR",
         use_alr=False,
         activation=nn.ReLU()
     ):
@@ -74,11 +74,11 @@ class CutBayesFlow(nn.Module):
     ):
         transforms = []
         # Use cyclic masks for NSF and RealNVP coupling
-        if self.flow_type in ("NSF", "REALNVP"):
+        if self.flow_type in ("NSF-C", "REALNVP"):
             masks = generate_cyclic_masks(self.flow_dim, num_layers)
 
         for i in range(num_layers):
-            if self.flow_type == "MAF":
+            if self.flow_type == "NSF-AR":
                 transforms.append(ReversePermutation(features=self.flow_dim))
                 transforms.append(
                     MaskedPiecewiseRationalQuadraticAutoregressiveTransform(
@@ -96,7 +96,7 @@ class CutBayesFlow(nn.Module):
                     )
                 )
 
-            elif self.flow_type == "NSF":
+            elif self.flow_type == "NSF-C":
                 mask = masks[i]
                 def make_net(in_f, out_f):
                     return ResidualNet(
