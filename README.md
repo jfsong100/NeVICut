@@ -1,4 +1,4 @@
-# NeVI-Cut: Neural Network Variational Inference Cut Bayes model
+# NeVI-Cut: Neural variational inference for cut-Bayes
 
 This repository contains:
 - `cutBayesFlow/`: core model and training functions
