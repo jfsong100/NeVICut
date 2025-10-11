@@ -39,9 +39,9 @@ experiments/
 #### Core Implementation
 - **`cutBayesFlow/`**
   - `model.py`: `CutBayesFlow` with flow options
-    - **RQ-NSF(AR)**: Rational-Quadratic Neural Spline Flow, autoregressive (Durkan et al.,2019)
-    - **RQ-NSF(C)**: Rational-Quadratic Neural Spline Flow, coupling (Durkan et al.,2019)
-     - **UMNN** Unconstrained Monotonic Neural Network (Wehenkel and Louppe, 2019)
+    - **NSF-AR**: Rational-Quadratic Neural Spline Flow, autoregressive (Durkan et al.,2019)
+    - **NSF-C**: Rational-Quadratic Neural Spline Flow, coupling (Durkan et al.,2019)
+     - **UMNN**: Unconstrained Monotonic Neural Network (Wehenkel and Louppe, 2019)
   - `train.py`: training loop
 
 #### Simulation Studies
@@ -63,7 +63,7 @@ experiments/
   - Upstream data: confusion-matrix posteriors are publicly available at the [CCVA-Misclassification-Matrices repository](https://github.com/sandy-pramanik/CCVA-Misclassification-Matrices).  
   - Downstream data: counts come from *CCVA Outputs for Publicly Available Verbal Autopsy (VA) Data from COMSA–Mozambique*, which include results from three computer-coded verbal autopsy (CCVA) algorithms, **EAVA**, **InSilicoVA**, **InterVA**. Outputs for EAVA are generated using the EAVA R package, while InSilicoVA and InterVA outputs are produced with the openVA R package.
   - Downstream analysis via NeVI-Cut (`NeVI_Cut.ipynb`). 
-  - Downstream analysis via Parametric Variational Inference (`NeVI_Cut.ipynb`). 
+  - Downstream analysis via Parametric Variational Inference (`Parametric_VI.ipynb`). 
   - See Paper § 6.2 for the full COMSA application.
 
 ## Citation
