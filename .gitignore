@@ -1,9 +1,2 @@
-experiments/real_data/COMSA/
-master_experiments.ipynb
-experiments/compare_flows.ipynb 
-experiments/monotone_exp_relu_finv copy.ipynb 
-experiments/monotone_exp_relu_finv.ipynb 
-experiments/monotone_exp_relu.ipynb 
-experiments/monotone.ipynb 
-experiments/validation.ipynb
+experiments/real_data/HPV/downstream
 .DS_Store

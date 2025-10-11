@@ -7,7 +7,7 @@ from nflows.transforms.permutations import ReversePermutation, RandomPermutation
 from nflows.transforms.autoregressive import MaskedPiecewiseRationalQuadraticAutoregressiveTransform
 from nflows.transforms.coupling import PiecewiseRationalQuadraticCouplingTransform, AffineCouplingTransform
 from nflows.nn.nets import ResidualNet
-
+from cutbayesflow.self_umnn import UMNN1DTransform
 
 def generate_cyclic_masks(dim, num_layers):
     masks = []
@@ -142,7 +142,16 @@ class CutBayesFlow(nn.Module):
                     ReversePermutation(features=self.flow_dim),
                     RandomPermutation(features=self.flow_dim),
                 ])
-
+            elif self.flow_type == "UMNN":
+                assert self.flow_dim == 1, "Use UMNN1DTransform for exact 1D parity."
+                transforms.append(
+                    UMNN1DTransform(
+                        eta_dim=self.p_eta,
+                        t0=0.0,
+                        steps=500,
+                        hidden=hidden_features
+                    )
+                )
             else:
                 raise NotImplementedError(f"Unsupported flow_type '{self.flow_type}'")
 
