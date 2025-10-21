@@ -68,7 +68,7 @@ experiments/
 
 ## Citation
 Please cite the following paper when you use NeVI-Cut:
-Song, Jiafang, Sandipan Pramanik, and Abhirup Datta. "Neural variational inference for cutting feedback during uncertainty propagation." arXiv preprint arXiv:2510.10268 (2025).
+> Song, Jiafang, Sandipan Pramanik, and Abhirup Datta. "Neural variational inference for cutting feedback during uncertainty propagation." arXiv preprint arXiv:2510.10268 (2025).
 
 ## References
 - Durkan, C., et al. (2019). *Neural Spline Flows.* *Advances in Neural Information Processing Systems,* 32.
