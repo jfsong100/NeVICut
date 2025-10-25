@@ -58,10 +58,8 @@ experiments/
   - See Paper § 6.1 for full analysis.
 
 - **`experiments/real_data/COMSA/`**
-  - `comsa_data`: **posterior samples of confusion matrices** and **downstream cause-of-death counts** (COMSA–Mozambique).
-        **downstream cause-of-death counts** 
   - Upstream data: confusion-matrix posteriors are publicly available at the [CCVA-Misclassification-Matrices repository](https://github.com/sandy-pramanik/CCVA-Misclassification-Matrices).  
-  - Downstream data: counts come from *CCVA Outputs for Publicly Available Verbal Autopsy (VA) Data from COMSA–Mozambique*, which include results from three computer-coded verbal autopsy (CCVA) algorithms, **EAVA**, **InSilicoVA**, **InterVA**. Outputs for EAVA are generated using the EAVA R package, while InSilicoVA and InterVA outputs are produced with the openVA R package.
+  - Downstream data: *[CCVA Outputs](https://github.com/sandy-pramanik/vacalibration/tree/main/data) for Publicly Available Verbal Autopsy (VA) Data from COMSA–Mozambique*, which include results from three computer-coded verbal autopsy (CCVA) algorithms, **EAVA**, **InSilicoVA**, **InterVA**. Outputs for EAVA are generated using the EAVA R package, while InSilicoVA and InterVA outputs are produced with the openVA R package.
   - Downstream analysis via NeVI-Cut (`NeVI_Cut.ipynb`). 
   - Downstream analysis via Parametric Variational Inference (`Parametric_VI.ipynb`). 
   - See Paper § 6.2 for the full COMSA application.
