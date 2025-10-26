@@ -1,4 +1,5 @@
 experiments/real_data/HPV/downstream
 experiments/real_data/COMSA/comsa_data
+experiments/real_data/COMSA/downstream_results
 .DS_Store
 .Rhistory
