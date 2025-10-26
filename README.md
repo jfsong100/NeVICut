@@ -60,8 +60,12 @@ experiments/
 - **`experiments/real_data/COMSA/`**
   - Upstream data: confusion-matrix posteriors are publicly available at the [CCVA-Misclassification-Matrices repository](https://github.com/sandy-pramanik/CCVA-Misclassification-Matrices).  
   - Downstream data: *[CCVA Outputs](https://github.com/sandy-pramanik/vacalibration/tree/main/data) for Publicly Available Verbal Autopsy (VA) Data from COMSA–Mozambique*, which include results from three computer-coded verbal autopsy (CCVA) algorithms, **EAVA**, **InSilicoVA**, **InterVA**. Outputs for EAVA are generated using the EAVA R package, while InSilicoVA and InterVA outputs are produced with the openVA R package.
-  - Downstream analysis via NeVI-Cut (`NeVI_Cut.ipynb`). 
+  - Prepare upstream data and downstream data using (`rscripts/prepare_data.R`) to create the folder `comsa_data`.
+  - Downstream analysis via NeVI-Cut (`NeVI_Cut.ipynb`), downstream results are saved in the folder `downstream_results`.
   - Downstream analysis via Parametric Variational Inference (`Parametric_VI.ipynb`). 
+  - Downstream analysis via nested MCMC (`rscripts/multimpute.R`), full Bayes (`rscripts/seqbayes.R`).
+  - Calculate the Wasserstein distance using (`rscripts/Wasserstein.R`) 
+  - Plot the results using (`rscripts/plot.R`).
   - See Paper § 6.2 for the full COMSA application.
 
 ## Citation
