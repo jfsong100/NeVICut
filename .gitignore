@@ -1,4 +1,9 @@
 experiments/real_data/HPV/downstream
+experiments/simulations/propensity_score/master_experiments.ipynb
+experiments/simulations/propensity_score/sensitivity
+experiments/real_data/COMSA/test.ipynb
+experiments/real_data/COMSA/master_experiments.ipynb
+experiments/real_data/COMSA/sensitivity
 experiments/real_data/COMSA/comsa_data
 experiments/real_data/COMSA/comsa_data_final
 experiments/real_data/COMSA/downstream_results

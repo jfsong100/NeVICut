@@ -1,4 +1,4 @@
-name: NeVI
+name: nevi-cut
 channels:
   - defaults
   - conda-forge
@@ -9,7 +9,7 @@ dependencies:
   - scipy=1.14.1
   - pyreadr=0.5.2
   - matplotlib
-  - nb_conda
+  - ipykernel
   - jupyter
   - pip
   - pip:

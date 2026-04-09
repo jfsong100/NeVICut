@@ -8,17 +8,15 @@ Acknowledgement: This work was developed with support from the National Institut
 
 
 ## Setup
-### Option A: Conda environment (recommended)
+### Conda environment (recommended)
 ```bash
 conda env create -f environment.yml
 conda activate nevi-cut
 ```
 
-### Option B: Pip install via setup.py:
+### Pip install via setup.py:
 ```bash
 pip install .
-# or for development
-pip install -e .
 ```
 
 ## Repository Layout
@@ -53,8 +51,11 @@ experiments/
 #### Real-Data Applications
 - **`experiments/real_data/HPV/`**
   - Association between HPV prevalence and cervical cancer incidence (motivated by Maucort-Boulch et al., 2008).  
-  - Upstream posteriors via conjugate Beta models (`stage 1/`).  
-  - Downstream analysis via NeVI-Cut (`hpv.ipynb`). 
+  - Upstream posteriors via conjugate Beta models (`upstream/`) generated using (`theta1_samples_gen.R`).  
+  - Downstream analysis via NeVI-Cut (`NeVI_Cut.ipynb`), downstream results are saved in the folder `downstream`.
+  - Downstream analysis via Gaussian VA (`Gaussian_VA.ipynb`; Yu et al., 2023), code is from [Github](https://github.com/Yu-Xuejun/Variational-Cutting-Feedback)
+  - Downstream analysis via Tempered Cut and OpenBugs Cut (`openBugs_and_tempered.R`). Using methods from (Plummer, 2015), code is from Supplementary material of (Plummer, 2015).
+  - Plot the results using (`plot.R`).
   - See Paper § 6.1 for full analysis.
 
 - **`experiments/real_data/COMSA/`**
@@ -85,3 +86,4 @@ Please cite the following paper when you use NeVI-Cut:
 - Byass, P., et al. (2012). *Strengthening Standardised Interpretation of Verbal Autopsy Data: the InterVA-4 Tool.* *Global Health Action,* 5, 19281.  
 - Macicame, I., et al. (2023). *Countrywide Mortality Surveillance for Action in Mozambique.* *American Journal of Tropical Medicine and Hygiene,* 108 (Suppl 5): 5–16.  
 - Kalter, H. D., et al. (2015). *Direct Estimates of National Neonatal and Child Cause-Specific Mortality Proportions in Niger.* *Journal of Global Health,* 5.
+- Yu, X., et al. (2023). *Variational inference for cutting feedback in misspecified models.* *Statistical Science* 38.3: 490-509.
