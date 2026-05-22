@@ -4,7 +4,7 @@
 
 Authors: Jiafang Song, Sandipan Pramanik, Abhirup Datta
 
-Acknowledgment: This work was developed with support from the National Institute of Environmental Health Sciences (NIEHS) (grant R01ES033739); Gates Foundation Grants  INV-034842 and INV-070577; Johns Hopkins University Institute for Data Intensive Engineering and Science Seed Funding; and K99 NIH Pathway to Independence Award (1K99HD114884-01A1).
+Acknowledgment: This work was developed with support from the National Institute of Environmental Health Sciences (NIEHS) grant R01ES033739, Bill and Melinda Gates Foundation Grants INV-034842 and INV-070577, Eunice Kennedy Shriver National Institute Of Child Health & Human Development of the National Institutes of Health under K99 Pathway to Independence Award Number 1K99HD114884-01A1, and 2024 Data Science and AI Institute Demonstration Projects Award.
 
 
 ## Setup
